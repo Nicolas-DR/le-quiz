@@ -1,0 +1,53 @@
+<!-- 
+    
+Développer par Nicolas De Roose pour le cours d'Application multimédia de monsieur Jamoulle Frédéric. 2019/20
+
+source du quiz : https://www.faitscovid19.ca/fr/quiz
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le quiz</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="home" class="flex-column flex-center">
+        <div class="haut"><h1>Le quiz</h1></div>
+        <p>Quiz pour lutter contre la désinformation sur le Covid-19</p>
+        <div class="row">
+          <div class="col-sm">
+            <a href="./jeu/quiz.html" class="btn btn-primary">Commencer</a>
+          </div>
+          <div class="col-sm">
+            <a
+              href="./jeu/highscores.html"
+              id="highscore-btn"
+              class="btn btn-warning"
+              >Classement<i class="fal fa-crown"></i
+            ></a>
+          </div>
+        </div>
+        <p>Quiz provenant de</p>
+        <p>
+          <a
+            href="https://www.faitscovid19.ca/fr/quiz"
+            onclick="window.open(this.href); return false"
+            ;
+            >faitscovid19.ca</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le quiz</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="quiz" class="justify-center flex-column">
+        <div class="haut">
+          <div id="hud">
+            <div class="hud-item">
+              <div class="progress" id="progressBar">
+                <div
+                  class="progress-bar-animated progress-bar progress-bar-striped"
+                  id="progressBarFull"
+                >
+                  <p id="progressText" class="hud-prefix">Question</p>
+                </div>
+              </div>
+            </div>
+            <h1>Le quiz</h1>
+            <div class="hud-item">
+              <p class="hud-prefix">Score</p>
+              <p class="hud-main-text" id="score">0</p>
+            </div>
+          </div>
+        </div>
+        <p id="question">Question</p>
+        <div class="row" style="text-align: center">
+          <div class="col-sm">
+            <button class="choice-text btn btn-primary" data-number="1">
+              Choix 1
+            </button>
+          </div>
+          <div class="col-sm">
+            <button class="choice-text btn btn-primary" data-number="2">
+              Choix 2
+            </button>
+          </div>
+          <div class="col-sm">
+            <button class="choice-text btn btn-primary" data-number="3">
+              Choix 3
+            </button>
+          </div>
+          <div class="col-sm">
+            <button class="choice-text btn btn-primary" data-number="4">
+              Choix 4
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/quiz.js"></script>
+  </body>
+</html>

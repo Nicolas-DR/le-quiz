@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le quiz</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <div class="haut"><h1>Le quiz</h1></div>
+        <h1 id="finalScore">0</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">
+            Entre ton nom ci-dessous pour enregistrer ton score !
+          </h2>
+          <input type="text" name="name" id="username" placeholder="Ton nom" />
+          <button
+            class="btn btn-primary"
+            id="saveScoreBtn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Sauvegarder
+          </button>
+        </form>
+        <a href="./game.html" class="btn btn-primary">Rejouer</a>
+        <a href="../index.html" class="btn btn-primary"
+          >Accueil<i class="fas fa-home"></i
+        ></a>
+      </div>
+    </div>
+    <script src="../js/end.js"></script>
+  </body>
+</html>
